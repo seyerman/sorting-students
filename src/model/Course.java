@@ -43,4 +43,8 @@ public class Course {
 		
 		Arrays.sort(students,studentComparator);
 	}
+	
+	public void sortByFullName() {
+		Arrays.sort(students,new StudentFullNameComparator());
+	}
 }

@@ -12,7 +12,9 @@ public class Main {
 						new Student("Marisol","Giraldo","A9876",4.9),
 						new Student("Daniel","Fernández","A4567",2.4),
 						new Student("Emilio","Rodríguez","A3456",2.9),
-						new Student("Oscar","Riascos","A6543",3.1)						
+						new Student("Oscar","Riascos","A6543",3.1),
+						new Student("Pedro","Riascos","A6543",3.1),
+						new Student("Pablo","Riascos","A6543",3.1)						
 				}
 		);
 		
@@ -35,6 +37,11 @@ public class Main {
 		System.out.println("=======\nSorted by Name");
 		Student[] sts4 = course.getStudents();
 		printStudents(sts4);
+		
+		course.sortByFullName();
+		System.out.println("=======\nSorted by Full Name");
+		Student[] sts5 = course.getStudents();
+		printStudents(sts5);
 	}
 	
 	
